@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Hotels</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
+</head>
+<body>
+
+<section class="container">
+        <div class="row__nav">
+            <nav>
+                <ul class="nav">
+                    <div class="menu__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <li class="nav__li nav__padding"><a href="#" class="nav__link">SEARCH TICKETS</a></li>
+                    <li class="nav__li nav__padding"><a href="#" class="nav__link">SAPSAN</a></li>
+                    <li class="nav__li nav__padding"><a href="#" class="nav__link">ALLEGRO</a></li>
+                    <li class="nav__li nav__padding nav__dropdown">
+                        <a href="#" class="nav__link">TRANS-SIBERIAN</a><div class="nav__arrowDown"></div>
+                        <div class="nav__dropdown-content">
+                            <a class="nav__dropdown-link" href="#">Trans-x</a>
+                            <a class="nav__dropdown-link" href="#">Transformer</a>
+                            <a class="nav__dropdown-link" href="#">Trans-gender</a>
+                        </div>
+                    </li>
+                    <li class="nav__li nav__padding nav__dropdown">
+                        <a href="#" class="nav__link">FAQ</a><div class="nav__arrowDown"></div>
+                        <div class="nav__dropdown-content">
+                            <a class="nav__dropdown-link" href="#">Frequently</a>
+                            <a class="nav__dropdown-link" href="#">Asked</a>
+                            <a class="nav__dropdown-link" href="#">Questions</a>
+                        </div>
+                    </li>
+                    <li class="nav__li nav__padding nav__dropdown">
+                        <a href="#" class="nav__link">TICKETS GUIDE</a><div class="nav__arrowDown"></div>
+                        <div class="nav__dropdown-content">
+                            <a class="nav__dropdown-link" href="#">Group travel</a>
+                            <a class="nav__dropdown-link" href="#">Ticket types</a>
+                            <a class="nav__dropdown-link" href="#">Child policy</a>
+                            <a class="nav__dropdown-link" href="#">Change ticket request</a>
+                            <a class="nav__dropdown-link" href="#">Cancel tickets</a>
+                        </div>
+                    </li>
+                    <li class="nav__li nav__padding nav__dropdown">
+                        <a href="#" class="nav__link">CONTACT US</a><div class="nav__arrowDown"></div>
+                        <div class="nav__dropdown-content">
+                            <a class="nav__dropdown-link" href="#">Group travel</a>
+                            <a class="nav__dropdown-link" href="#">Ticket types</a>
+                            <a class="nav__dropdown-link" href="#">Child policy</a>
+                            <a class="nav__dropdown-link" href="#">Change ticket request</a>
+                            <a class="nav__dropdown-link" href="#">Cancel tickets</a>
+                        </div>
+                    </li>
+                    <li class="nav__sign nav__padding">
+                        <div class="nav__signImg"></div><a href="" class="nav__link-sign">Sign in</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    <div class="row__selection">
+        <h1 class="selection__title">Russian Train Ticket</h1>
+        <div class="selection">
+
+            <div class="selection__city">
+                <div class="selection__city-block">
+                    <p class="selection__text">Departure city:</p>
+                    <input class="selection__input selection__input-departure" type="text" placeholder="Type city name">
+                    <p class="selection__text selection__text-gray">Ex:
+                        <span class="selection__text selection__text-example selection__text-exampleDep">St.Petersburg</span>
+                        <span class="selection__text selection__text-example selection__text-exampleDep">Moscow</span>
+                    </p>
+                </div>
+                <div class="selection__arrows"></div>
+                <div class="selection__city-block">
+                    <p class="selection__text">Arrival city:</p>
+                    <input class="selection__input selection__input-arrival" type="text" placeholder="Type city name">
+                    <p class="selection__text selection__text-gray">Ex:
+                        <span class="selection__text selection__text-example selection__text-exampleArr">St.Petersburg</span>
+                        <span class="selection__text selection__text-example selection__text-exampleArr">Moscow</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="selection__option">
+                <div>
+                    <p class="selection__text">Departure date:</p>
+                    <input class="selection__input selection__input-date" type="text" placeholder="dd.mm.yyyy">
+                    <button class="selection__calendar selection__calendar-white"></button>
+                </div>
+                <div class="selection__returnDate">
+                    <div class="selection__roundtrip">
+                        <input class="selection__checkbox" type="checkbox" id="roundtrip">
+                        <label class="selection__text selection__label" for="roundtrip">Roundtrip</label>
+                    </div>
+                    <div>
+                        <p class="selection__text">Return date:</p>
+                        <input class="selection__input selection__input-blueDate" type="text" placeholder="dd.mm.yyyy">
+                        <button class="selection__calendar selection__calendar-blue"></button>
+                    </div>
+                </div>
+                <div class="selection__currency">
+                    <p class="selection__text">Currency:</p>
+                    <select data-smart-positioning="false" class="selection__select" name="" id="">
+                        <option class="selection__text" value="rub">USD</option>
+                        <option class="selection__text" value="rub">RUB</option>
+                        <option class="selection__text" value="rub">GBR</option>
+                        <option class="selection__text" value="rub">EUR</option>
+                        <option class="selection__text" value="rub">CHF</option>
+                    </select>
+                </div>
+                <button class="selection__button"><div class="selection__button-img"></div>Search</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="./js/jquery.formstyler.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
